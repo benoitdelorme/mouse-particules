@@ -13,6 +13,15 @@ body
     cursor: none;
 }
 
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+        url('/static/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('/static/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
 canvas
 {
     position: fixed;
@@ -29,4 +38,16 @@ canvas
     background-color: black;
     height: 100%;
     width: 100%;
+}
+
+h1 
+{
+    color: white;
+    font-size: 4rem;
+    font-family: Mona Sans;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 10;
 }

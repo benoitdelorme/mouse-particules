@@ -25,7 +25,7 @@ export default class MouseParticlesEffect {
 
         this.x = 0
         this.y = 0
-        
+
         this.colors = [
             "#B5FFE1",
             "#93E5AB",
