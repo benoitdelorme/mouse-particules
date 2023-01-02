@@ -8,7 +8,7 @@ export default class Particle {
         this.velX = velX
         this.velY = velY
 
-        this.defaultSize = 4
+        this.defaultSize = 2.5
         this.maxLife = 5
         this.life = 5
         this.gravity = 1
@@ -18,13 +18,13 @@ export default class Particle {
         this.x += this.velX
         this.y += this.velY + this.gravity
 
-        this.velX *=0.99
-        this.velY *=0.99
+        this.velX *= 0.99
+        this.velY *= 0.99
 
-        this.gravity +=0.01
+        this.gravity += 0.01
         this.life -= 0.1
         
-        this.size = Math.max(0,this.defaultSize*this.life/this.maxLife)
+        this.size = Math.max(0, this.defaultSize * this.life / this.maxLife)
         
         ctx.fillStyle = this.color
         ctx.fill();

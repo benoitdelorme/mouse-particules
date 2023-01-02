@@ -1,5 +1,3 @@
-import imagesLoaded from 'imagesloaded';
-
 /**
  * Preload fonts
  * @param {String} id
@@ -12,16 +10,6 @@ import imagesLoaded from 'imagesloaded';
             },
             active: resolve
         });
-    });
-};
-
-/**
- * Preload images
- * @param {String} selector
- */
-const preloadImages = (selector = 'img') => {
-    return new Promise((resolve) => {
-        imagesLoaded(document.querySelectorAll(selector), {}, resolve);
     });
 };
 
@@ -97,7 +85,6 @@ const stringToColour = (str) => {
 
 export { 
     preloadFonts,
-    preloadImages,
     adjustedBoundingRect,
     offset,
     stringToColour
