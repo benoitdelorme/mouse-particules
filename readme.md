@@ -1,5 +1,7 @@
 # Mouse Particules
 
+![particles](https://raw.githubusercontent.com/benoitdelorme/mouse-particules/main/cursor.jpg)
+
 ## Setup
 Run this followed commands:
 
